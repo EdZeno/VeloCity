@@ -21,10 +21,8 @@ class Api::V1::ComponentsController < ApplicationController
   end
 
   def destroy
-    p 'In the destroy function ***********'
     part = Component.find(params['comp_id'])
     part.destroy
-    p 'OUT OF THE FUNCTION'
     head 204
   end
 end
