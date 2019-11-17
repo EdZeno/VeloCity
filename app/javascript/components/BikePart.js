@@ -17,7 +17,6 @@ class BikePart extends Component {
             })
           .then(response => {
             if (response.ok) {
-              console.log(response)
             }else{
               throw new Error("Network response was not ok.");
               }

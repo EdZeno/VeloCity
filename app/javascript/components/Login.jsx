@@ -71,7 +71,6 @@ export default function SignInSide() {
 
     const handleSubmit = () => {
         event.preventDefault();
-        console.log(document.getElementById("email").value);
         const body_test = JSON.stringify({"user": {
                 "email": document.getElementById("email").value,
                 "password": document.getElementById("password").value

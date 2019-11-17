@@ -32,7 +32,6 @@ componentDidMount() {
 
     refreshBikes = () => {
         var bike_ids = [];
-        console.log(this.state.bikes);
         this.state.bikes.forEach(function(bike) {bike_ids.push(bike[0].strava_gear_id) } )
         const url = "api/v1/strava/refresh_bikes?bike_ids="+bike_ids+"&user_id="+ls.get("user_id");
         fetch(url, {
@@ -64,7 +63,6 @@ componentDidMount() {
 
 render() {
     const { bikes } = this.state;
-    console.log(bikes)
     const allBikesAndParts = bikes.map((bikeAndParts, index) => (
         <div key={index} className="col-md-6 col-lg-4">
             <div className="card mb-4">
