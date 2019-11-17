@@ -5,7 +5,6 @@ class BikePart extends Component {
   constructor(props) {
     super(props);
     const { part } = props
-    // this.state = {id: ""}
     this.deletePart = this.deletePart.bind(this);
   }
 

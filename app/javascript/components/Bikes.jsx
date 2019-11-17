@@ -61,7 +61,6 @@ componentDidMount() {
         })
         .then(reload => window.location.reload())
     }
-    // TODO - should really be refreshing the component, not the whole page
 
 render() {
     const { bikes } = this.state;

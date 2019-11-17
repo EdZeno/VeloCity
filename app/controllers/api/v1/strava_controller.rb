@@ -1,7 +1,5 @@
 
 class Api::V1::StravaController < ApplicationController
-  # TODO need to check this line isn't dangerous.  Fixed it falling over with
-  # "Can't verify CSRF token authenticity." Error
   before_action :check_login, only: %i[find_bikes refresh_bikes]
   protect_from_forgery with: :null_session
 

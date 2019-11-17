@@ -20,4 +20,3 @@ class Api::V1::SignupController < ApplicationController
   end
 end
 
-# TODO: Delete all prints to the console
