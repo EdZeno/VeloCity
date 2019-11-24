@@ -27,7 +27,8 @@ To get a development environment running please clone this repo in your desired 
 ```
 $ git clone git@github.com:gabokappa/VeloCity.git
 ```
-- Install gems and dependencies
+- Install gems and dependencies  
+(PostgreSQL must be installed on your local machine before running bundle install.)
 ```
 $ bundle install
 $ npm install --check-files
@@ -106,4 +107,3 @@ In summary, we wanted to create a web app that reinforced the knowledge we had a
 The team prioritised learning over implementation of lots of new features. This meant that we often decided to work in pairs exchanging the pair's focus midway through a sprint for two reasons. 1) This meant every member got exposure to different sections of code and wasn't 'stuck' doing just back-end or front-end. 2) This made sure that each member understood the code that another member wrote.
 
 The team worked in two-day sprints, with each sprint starting with a planning session, either a recap or replanning based on the previous sprint. On a daily basis we had a standup at the beginning and middle of the day, followed by a checkin at the end to understand how things were going and make sure a pair wasn't blocked.
-
