@@ -27,7 +27,7 @@ To get a development environment running please clone this repo in your desired 
 ```
 $ git clone git@github.com:gabokappa/VeloCity.git
 ```
-- Install gems and dependencies  (PostgreSQL must be installed on your local machine before running bundle install.)
+- Install gems and dependencies  (PostgreSQL and Node.js must be installed on your local machine before running bundle install.)
 ```
 $ bundle install
 $ npm install --check-files
