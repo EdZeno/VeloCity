@@ -22,6 +22,18 @@
     cy.contains("Don't have an account? Sign Up").click()
     cy.url().should('include', 'http://localhost:3000/signup')
   })
+
+  it('user can sign up', function() {
+    cy.visit('http://localhost:3000')
+    cy.contains("Don't have an account? Sign Up").click()
+    cy.get('#firstName').type('Ed')
+    cy.get('#lastName').type('Gut')
+    cy.get('#email').type('ed@gmail.com')
+    cy.get('#password').type('111')
+    // cy.get('[data-cy=form]').submit()
+    cy.contains('Sign Up').click()
+  })
+
   // it('There is button for viewing bikes', function() {
   //   cy.visit('http://localhost:3000')
   //   cy.contains('Click here to view your Bikes')
