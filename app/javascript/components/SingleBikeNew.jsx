@@ -50,13 +50,13 @@ class SingleBike extends React.Component {
       return (
         <div>
 
-          <div class="container">
-            <div class="row">
-              <div class="span1"></div>
+          <div className="container">
+            <div className="row">
+              <div className="span1"></div>
                 <div className="mx-auto d-block">
                   <BikeImage frame_type={bikeAndParts.bike.frame_type} />
                 </div>
-              <div class="span1"></div>
+              <div className="span1"></div>
             </div>
           </div>
 
