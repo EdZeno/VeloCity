@@ -44,8 +44,8 @@ class BikePart extends Component {
       }
       else {
         return {backgroundColor: "#dc3545", color:"white"}
-    };
-  };
+    }
+  }
 
   return (
     <div>
