@@ -4,7 +4,7 @@ class BikePartSummary extends React.Component {
   constructor(props) {
     super(props);
     this.state = { bikeAndParts: null }
-  };
+  }
 
   componentDidMount() {
     this.setState({ bikeAndParts: this.props })
@@ -30,7 +30,7 @@ class BikePartSummary extends React.Component {
           case (usage >= 100):
             replaceNow.push(part);
             break;
-        };
+        }
       });
 
       return (

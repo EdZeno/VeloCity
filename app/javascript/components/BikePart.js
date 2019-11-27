@@ -61,7 +61,7 @@ class BikePart extends Component {
         <button className="btn btn-danger btn-sm" onClick={this.deletePart}>Delete</button>
       </div>
     </div>
-  )};
+  )}
 }
 
 export default BikePart
