@@ -5,7 +5,7 @@ import '../../assets/stylesheets/dropdown.css';
 class DropMenu extends React.Component {
 constructor(){
  super();
-};
+}
 
 
 render() {
