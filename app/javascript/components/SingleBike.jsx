@@ -9,7 +9,7 @@ class SingleBike extends React.Component {
   constructor(props) {
     super(props);
     this.state = { bikeAndParts: null }
-    };
+    }
 
 componentDidMount() {
   const url = `/api/v1/bikes/show?bike_id=${window.location.href.split("bike/")[1]}`;
@@ -25,7 +25,7 @@ componentDidMount() {
   })
   .then(json => this.setState({bikeAndParts: JSON.parse(json) }))
   .catch((err) => console.log(err));
-};
+}
 
   render() {
 
