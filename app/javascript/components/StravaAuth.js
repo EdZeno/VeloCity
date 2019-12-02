@@ -66,7 +66,7 @@ export default function SignUp() {
         <Typography component="h1" variant="h5">
           Strava Authorisation
         </Typography>
-        <form className={classes.form} noValidate>
+        <form className={classes.form} data-cy="authorise" noValidate>
           <h6>Now that you have registered for our VeloCity App you need to Authorise your Strava account to allow us access to your bike information.
           <br/><br/>Please click the button below, and follow the Strava instructions.
           You need to give us access to view both activity and private activity information</h6>

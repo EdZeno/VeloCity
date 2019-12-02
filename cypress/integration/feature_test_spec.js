@@ -26,12 +26,19 @@
   it('user can sign up', function() {
     cy.visit('http://localhost:3000')
     cy.contains("Don't have an account? Sign Up").click()
-    cy.get('#firstName').type('Ed3')
-    cy.get('#lastName').type('Gut3')
-    cy.get('#email').type('ed3@gmail.com')
+    cy.get('#firstName').type('Ed2')
+    cy.get('#lastName').type('Gut2')
+    cy.get('#email').type('ed2@gmail.com')
     cy.get('#password').type('111')
-    // cy.get('[data-cy=form]').submit()
-    cy.contains('Sign Up').click()
+    cy.get('[data-cy=form]').submit()
+
+    cy.on('uncaught:exception', (err, runnable) => {
+    return false
+  })
+
+    cy.get('[data-cy=authorise]').submit()
+
+    // cy.contains('Sign Up').click()
   })
 
   // it('There is button for viewing bikes', function() {
